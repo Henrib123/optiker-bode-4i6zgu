@@ -1,0 +1,8 @@
+{
+  "name": "Optiker Bode",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "2cb90986"
+}
