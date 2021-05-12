@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { IndexPage } from './index.page';
+import { MeineAuftraegePage } from './meine-auftraege.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: IndexPage
+    component: MeineAuftraegePage
   },
   {
-    path: 'virtual-try-on',
-    loadChildren: () => import('./virtual-try-on/virtual-try-on.module').then( m => m.VirtualTryOnPageModule)
+    path: 'index',
+    loadChildren: () => import('./index/index.module').then(m => m.IndexPageModule)
   }
 ];
 
@@ -18,4 +18,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class IndexPageRoutingModule {}
+export class MeineAuftraegePageRoutingModule {}
