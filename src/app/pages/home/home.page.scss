@@ -12,3 +12,26 @@ ion-toolbar {
   padding-right: 2vh;
 
 }
+ion-content{
+  --ion-background-color: rgb(246, 246, 246) !important;
+}
+ .menu {
+   background: rgb(254, 219, 0);
+   height: 140px;
+   width: 144px;
+   position: relative;
+   margin-top: -10px;
+ }
+
+
+.brille {
+
+  height: 80px;
+  width: 80px;
+  color: black;
+  position: absolute;
+  top: 24%;
+  left: 22%;
+}
+
+

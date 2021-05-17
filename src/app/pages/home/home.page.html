@@ -16,5 +16,45 @@
 
       <ion-title size="large">Tab 1</ion-title>
   </ion-header>
-  <ion-button href="./tabs/tab2" class="first" target="_blank" >Primary</ion-button>
+    <ion-slides [options]="slideOpts">
+      <ion-slide>
+        <ion-card class="slide">
+          <img src="assets/images/brillefraims.png" alt="">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="slide">
+          <img src="assets/images/footer_342x354px_01b.jpg" alt="">
+        </ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="slide">
+          <img src="assets/images/Bildschirmfoto%202021-05-03%20um%2011.58.45.png" alt="">
+        </ion-card>
+      </ion-slide>
+    </ion-slides>
+  <ion-row>
+    <ion-col size="6">
+      <ion-card class="menu" (click)="brillenPage('/brillen-uebersicht')">
+          <ion-icon class="brille" name="glasses-outline"></ion-icon>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card class="menu">
+        <ion-icon class="brille" name="eye-outline"></ion-icon>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="6">
+      <ion-card class="menu">
+        <ion-icon class="brille" name="heart-outline"></ion-icon>
+      </ion-card>
+    </ion-col>
+    <ion-col size="6">
+      <ion-card class="menu">
+        <ion-icon class="brille" name="map-outline"></ion-icon>
+      </ion-card>
+    </ion-col>
+  </ion-row>
 </ion-content>
