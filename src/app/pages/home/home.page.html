@@ -14,7 +14,6 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
 
-      <ion-title size="large">Tab 1</ion-title>
   </ion-header>
     <ion-slides [options]="slideOpts">
       <ion-slide>
@@ -35,24 +34,24 @@
     </ion-slides>
   <ion-row>
     <ion-col size="6">
-      <ion-card class="menu" (click)="brillenPage('/brillen-uebersicht')">
+      <ion-card class="menu" (click)="brillenPage('/tabs/brillen-uebersicht')">
           <ion-icon class="brille" name="glasses-outline"></ion-icon>
       </ion-card>
     </ion-col>
     <ion-col size="6">
-      <ion-card class="menu" (click)="brillenPage('/kontaktlinsen')">
+      <ion-card class="menu" (click)="brillenPage('tabs/kontaktlinsen')">
         <ion-icon class="brille" name="eye-outline"></ion-icon>
       </ion-card>
     </ion-col>
   </ion-row>
   <ion-row>
     <ion-col size="6">
-      <ion-card class="menu" (click)="brillenPage('/meine-favoriten')">
+      <ion-card class="menu" (click)="brillenPage('tabs/meine-favoriten')">
         <ion-icon class="brille" name="heart-outline"></ion-icon>
       </ion-card>
     </ion-col>
     <ion-col size="6">
-      <ion-card class="menu" (click)="brillenPage('/fehlerseite')">
+      <ion-card class="menu" (click)="brillenPage('tabs/fehlerseite')">
         <ion-icon class="brille" name="map-outline"></ion-icon>
       </ion-card>
     </ion-col>

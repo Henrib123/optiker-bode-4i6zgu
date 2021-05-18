@@ -20,6 +20,26 @@ const routes: Routes = [
         loadChildren: () => import('../tab3/tab3.module').then(m => m.Tab3PageModule)
       },
       {
+        path: 'brillen-uebersicht',
+        loadChildren: () => import('../brillen-uebersicht/brillen-uebersicht.module').then(m => m.BrillenUebersichtPageModule)
+      },
+      {
+        path: 'home',
+        loadChildren: () => import('../home/home.module').then(m => m.HomePageModule)
+      },
+      {
+        path: 'kontaktlinsen',
+        loadChildren: () => import('../kontaktlinsen/kontaktlinsen.module').then(m => m.KontaktlinsenPageModule)
+      },
+      {
+        path: 'meine-favoriten',
+        loadChildren: () => import('../meine-favoriten/meine-favoriten.module').then(m => m.MeineFavoritenPageModule)
+      },
+      {
+        path: 'fehlerseite',
+        loadChildren: () => import('../fehlerseite/fehlerseite.module').then(m => m.FehlerseitePageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/tab1',
         pathMatch: 'full'

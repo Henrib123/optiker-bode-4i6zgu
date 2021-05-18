@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-brillen-uebersicht',
@@ -7,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BrillenUebersichtPage implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) {
+  }
 
   ngOnInit() {
   }
-
+  brillenPage(url) {
+    this.router.navigateByUrl(url);
+  }
 }

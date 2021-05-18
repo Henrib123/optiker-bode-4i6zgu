@@ -1,10 +1,126 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>brillen-uebersicht</ion-title>
+    <ion-grid>
+      <ion-row >
+        <ion-col size="2" class="optiker-logo" >
+          <ion-icon  class="user" name="person-outline"></ion-icon>
+        </ion-col>
+        <ion-col size="8" class="schrift">
+          <h1>Brillen</h1>
+        </ion-col>
+        <ion-col class="optiker-logo">
+          <ion-icon class="user" name="heart-outline"></ion-icon>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button color="primary">Primary</ion-button>
-  <ion-button color="primary">Primary</ion-button>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="ion-align-items-center">
+        <img src="assets/images/brillefraims.png" alt="">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <h2>Damenbrillen</h2>
+    </ion-row>
+    <ion-row class="spezial">
+      <ion-col size="6">
+        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+
+          <ion-card-content class="brillenkarte">
+            <div class="ion-text-center">
+              <img src="assets/images/SaintLaurent.png" class="brillenbild">
+              <ion-card-text class="ion-align-items-center">Saint Laurent</ion-card-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+
+          <ion-card-content class="brillenkarte">
+            <div class="ion-text-center">
+              <img src="assets/images/RayBan2.png" class="brillenbild">
+              <ion-card-text class="ion-align-items-center">Ray Ban</ion-card-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="spezial">
+      <ion-col size="6">
+        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+
+          <ion-card-content class="brillenkarte">
+            <div class="ion-text-center">
+              <img src="assets/images/TomFord.png" class="brillenbild">
+              <ion-card-text class="ion-align-items-center">Tom Ford</ion-card-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+
+          <ion-card-content class="brillenkarte">
+            <div class="ion-text-center">
+              <img src="assets/images/SaintLaurent.png" class="brillenbild">
+              <ion-card-text class="ion-align-items-center"> Saint Laurent</ion-card-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="spezial">
+      <ion-col size="6">
+        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+
+          <ion-card-content class="brillenkarte">
+            <div class="ion-text-center">
+              <img src="assets/images/SaintLaurent.png" class="brillenbild">
+              <ion-card-text class="ion-align-items-center"> Saint Laurent</ion-card-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+
+          <ion-card-content class="brillenkarte">
+            <div class="ion-text-center">
+              <img src="assets/images/RayBan.png" class="brillenbild">
+              <ion-card-text class="ion-align-items-center"> Ray Ban</ion-card-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="spezial">
+      <ion-col size="6">
+        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+
+          <ion-card-content class="brillenkarte">
+            <div class="ion-text-center">
+              <img src="assets/images/SaintLaurent.png" class="brillenbild">
+              <ion-card-text class="ion-align-items-center"> Saint Laurent</ion-card-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+
+          <ion-card-content class="brillenkarte">
+            <div class="ion-text-center">
+              <img src="assets/images/SaintLaurent.png" class="brillenbild">
+              <ion-card-text class="ion-align-items-center"> Saint Laurent</ion-card-text>
+            </div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
