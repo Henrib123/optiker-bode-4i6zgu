@@ -1,0 +1,34 @@
+ion-toolbar {
+  --background: white;
+  position: relative;
+}
+.user {
+  color: black;
+  font-size: 31px;
+  padding-right: 2vh;
+}
+
+.schrift {
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 31px;
+  position: absolute;
+  left: 15%;
+  color: black;
+}
+.optiker-logo {
+  text-align: center;
+  padding-top: 35px;
+}
+
+ion-text {
+  color: black;
+  font-size: 27px;
+  font-weight: bold;
+}
+
+#einleitung {
+  padding-left: 14px !important;
+}
