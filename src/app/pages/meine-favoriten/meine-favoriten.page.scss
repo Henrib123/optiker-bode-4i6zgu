@@ -1,0 +1,67 @@
+ion-toolbar {
+  --background: white;
+  position: relative;
+}
+.user {
+  color: black;
+  font-size: 31px;
+  padding-right: 2vh;
+}
+
+.schrift {
+  padding-top: 10px;
+}
+
+h1 {
+  font-size: 31px;
+  position: absolute;
+  left: 30%;
+  color: black;
+}
+.optiker-logo {
+  text-align: center;
+  padding-top: 35px;
+}
+
+
+ion-card {
+  background: white !important;
+  position: relative;
+  margin-block: 10px;
+
+
+}
+
+
+ion-card-text {
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+  padding-left: 5vh;
+}
+
+.card-content-ios {
+  padding-inline-end: 0px !important;
+  padding-inline-start: 0px !important;
+
+}
+.spezial {
+  padding-bottom: 10px !important;
+}
+
+h2 {
+  color: black;
+  font-size: 30px;
+  padding-left: 1vh;
+}
+
+.pfeil {
+  font-size: 30px !important;
+  color: black;
+  padding-left: 85%;
+
+}
+
+p {
+  padding-left: 1.5vh;
+}
