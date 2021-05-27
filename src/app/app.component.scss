@@ -8,13 +8,53 @@ body {
 
 .icon {
   font-size: 25px;
+  color: black;
 }
 
 .chip {
   font-size: 25px;
   margin-top: 10%;
+  color: black;
 }
 
-.ion-menu {
-  color: white;
+.toolbar {
+  --background: white;
+  padding-bottom: 2vh;
+}
+.liste {
+  margin-top: 5vh;
+}
+
+.menu-item {
+  font-size: 25px;
+  padding-bottom: 2vh;
+  --background: white;
+  color: black;
+  font-weight: bold;
+  padding-right: 3vh;
+
+}
+
+.list-ios {
+  background-color: white !important;
+}
+
+.logo-menu {
+  padding-left: 4vh;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+
+.info-text {
+  color: black;
+  padding-left: 2vh;
+  padding-right: 2vh;
+  padding-top: 1vh;
+  font-size: 18px;
+}
+
+.impressum {
+  color: black;
+  margin-top: 3vh;
+  padding-left: 2vh;
 }

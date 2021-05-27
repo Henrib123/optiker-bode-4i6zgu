@@ -1,23 +1,47 @@
 <ion-app>
   <ion-menu side="start" menuId="first" contentId="main">
     <ion-header>
-      <ion-toolbar >
+      <ion-toolbar class="toolbar">
         <ion-chip class="chip">
           <ion-avatar>
             <ion-icon class="icon" name="person-circle-outline"></ion-icon>
           </ion-avatar>
-          <ion-label>Chip Avatar</ion-label>
+          <ion-label>Name</ion-label>
         </ion-chip>
       </ion-toolbar>
     </ion-header>
     <ion-content>
-      <ion-list>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
-        <ion-item>Menu Item</ion-item>
+      <ion-list class="liste">
+        <ion-item class="menu-item">Mein Konto</ion-item>
+        <ion-item class="menu-item">Meine Aufträge</ion-item>
+        <ion-item class="menu-item">Meine Gutscheine</ion-item>
+        <ion-item class="menu-item">Abmelden</ion-item>
       </ion-list>
+      <img class="logo-menu"  width="85%" src="assets/images/Logos_OptikerBode.svg" alt="" >
+      <div >
+        <ion-grid>
+          <ion-row>
+            <ion-text class="info-text">Optiker Bode Gmbh Verwaltung</ion-text>
+          </ion-row>
+          <ion-row>
+            <ion-text class="info-text">Straßenbahnring 19 20251 Hamburg</ion-text>
+          </ion-row>
+          <ion-row>
+            <ion-text class="info-text">Tel: (040)7393590 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fax: (040)73935944</ion-text>
+          </ion-row>
+          <ion-row>
+           <ion-text class="info-text">info@optiker-bode.de</ion-text>
+          </ion-row>
+          <div class="impressum">
+            <ion-row>
+             <ion-text>Datenschutz</ion-text>
+            </ion-row>
+            <ion-row>
+             <ion-text>Impressum</ion-text>
+            </ion-row>
+          </div>
+        </ion-grid>
+      </div>
     </ion-content>
   </ion-menu>
   <ion-router-outlet id="main"></ion-router-outlet>
