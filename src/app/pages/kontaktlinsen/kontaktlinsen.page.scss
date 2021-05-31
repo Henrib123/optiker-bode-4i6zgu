@@ -10,6 +10,7 @@ ion-toolbar {
 
 .schrift {
   padding-top: 10px;
+  margin-bottom: 57px;
 }
 
 h1 {
@@ -20,7 +21,7 @@ h1 {
 }
 .optiker-logo {
   text-align: center;
-  padding-top: 35px;
+  padding-top: 33px;
 }
 
 ion-text {
@@ -48,7 +49,7 @@ ion-text {
   color: rgb(254, 219, 0);
 }
 
-.vr {
+.anpassung {
   color: black;
   margin-left: 20%;
   font-size: 20px;
@@ -71,6 +72,7 @@ ion-button {
  --background: black;
   color: white;
   margin-top: 10%;
+  --border-radius: 50px;
 }
 
 ion-card {
