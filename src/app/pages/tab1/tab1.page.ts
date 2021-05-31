@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {LoadingController} from "@ionic/angular";
 
 @Component({
   selector: 'app-tab1',
@@ -6,7 +7,18 @@ import { Component } from '@angular/core';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
+  constructor(public loadingController: LoadingController) {
+  }
 
-  constructor() {}
+  async presentLoading() {
+    const loading = await this.loadingController.create({
+      cssClass: 'my-custom-class',
+      message: 'Please wait...',
+      duration: 2000
+    });
+    await loading.present();
 
+    const {role, data} = await loading.onDidDismiss();
+    console.log('Loading dismissed!');
+  }
 }
