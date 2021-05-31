@@ -48,14 +48,17 @@ ion-text {
 }
 
 .vr {
-  color: white;
-  padding-left: 10%;
+  color: black;
+  margin-left: 20%;
   font-size: 20px;
+  padding-left: 5%;
+  margin-bottom: 10%;
+
 }
 
 h3 {
   padding-top: 10%;
-  color: white;
+  color: black;
   padding-left: 5%;
   font-size: 15px;
 }
@@ -64,10 +67,14 @@ ion-button {
   width: 100%;
   padding-left: 0;
   padding-right: 0;
+ --background: black;
+  color: white;
+  margin-top: 10%;
 }
 
-ion-card-content {
+ion-card {
   padding-left: 0;
+  --background: grey !important;
 
 
 }
