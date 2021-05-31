@@ -51,15 +51,13 @@ ion-text {
 
 .anpassung {
   color: black;
-  margin-left: 20%;
-  font-size: 20px;
+  font-size: 25px;
   padding-left: 5%;
-  margin-bottom: 10%;
+
 
 }
 
 h3 {
-  padding-top: 10%;
   color: black;
   padding-left: 5%;
   font-size: 15px;
@@ -71,13 +69,23 @@ ion-button {
   padding-right: 0;
  --background: black;
   color: white;
-  margin-top: 10%;
+  margin-top: 8%;
   --border-radius: 50px;
 }
 
 ion-card {
-  padding-left: 0;
-  --background: grey !important;
-
-
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 40px;
+  --background: #d5d5d5 !important;
+  border-radius: 0px;
 }
+
+ion-grid {
+  padding: 0px;
+}
+
+ion-col {
+  padding: 0px;
+}
+
