@@ -1,9 +1,163 @@
-<ion-header>
+<ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>index</ion-title>
+    <ion-grid>
+      <ion-row >
+        <ion-col size="2" class="optiker-logo" >
+          <ion-buttons (click)="brillenPage('/tabs/brillen-uebersicht')">
+              <ion-icon class="user" name="chevron-back-outline"></ion-icon>
+          </ion-buttons>
+        </ion-col>
+        <ion-col size="8" class="schrift">
+          <h1>Brillen</h1>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-button color="primary">Primary</ion-button>
+  <img src="assets/images/RayBan2.png" alt="">
+  <ion-grid class="padd">
+    <ion-row class="gap">
+      <h2>RayBan</h2>
+    </ion-row>
+    <ion-row>
+      <p class="nummer">Seriennummer: 600327729624</p>
+    </ion-row>
+    <ion-row>
+      <ion-col size="5">
+        <h3>Farbe</h3>
+      </ion-col>
+      <ion-col size="4">
+        <p class="nummer2"> Havana/Gold</p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-badge color="primary">&nbsp;</ion-badge>
+      <ion-badge color="secondary">&nbsp;</ion-badge>
+      <ion-badge color="tertiary">&nbsp;</ion-badge>
+      <ion-badge class="havana">&nbsp;</ion-badge>
+    </ion-row>
+    <ion-row class="new">
+      <ion-col size="5">
+        <h3>Material</h3>
+      </ion-col>
+      <ion-col size="4">
+        <p class="nummer2"> Acetat</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="new">
+      <ion-col size="5">
+        <h3 >Rahmentyp</h3>
+      </ion-col>
+      <ion-col size="4">
+        <p class="nummer2"> Vollrand</p>
+      </ion-col>
+    </ion-row>
+    <ion-row class="groß">
+      <ion-col>
+        <ion-button>Termin vereinbaren</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button  fill="outline" class="klein">Virtuelle Anprobe</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row class="groß">
+      <h3 class="size">Klassische Sonnenbrille von RayBan</h3>
+    </ion-row>
+    <ion-row>
+      <p class="info">Diese Brille fasziniert nicht nur durch ihren elegenaten Stil,
+        sondern auch durch den Tragekomfort den Chanel Ihnen
+        mit der leichten Fassung schenkt. Die extravagante
+        Cateyebrille zieht mit Ihrer Farbkombination alle Blicke auf sich. Ein besonderes Highlight sind die Perlen, die in die Bügel dieser Chanel Brille eingearbeitet wurden. </p>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="wenig">
+          <h3 class="card">Maße</h3>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-card class="wenig">
+          <h3 class="card">Weitere Eigenschaften</h3>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-end">
+      <ion-col class="weniger" size="2">
+        <ion-card class="hintergrund">
+
+            <ion-icon name="checkmark-outline"></ion-icon>
+
+        </ion-card>
+      </ion-col>
+      <ion-col  size="6">
+        <h4>3 Jahre Garantie</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-end">
+      <ion-col class="wenig" size="2">
+        <ion-card class="hintergrund">
+
+          <ion-icon name="checkmark-outline"></ion-icon>
+
+        </ion-card>
+      </ion-col>
+      <ion-col  size="8">
+        <h4>Zufriedenheitsgarantie</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-end">
+      <ion-col class="wenig" size="2">
+        <ion-card class="hintergrund">
+
+          <ion-icon name="checkmark-outline"></ion-icon>
+
+        </ion-card>
+      </ion-col>
+      <ion-col  size="10">
+        <h4>6 Monate Verträlichkeitsgarantie</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-items-end">
+      <ion-col class="wenig" size="2">
+        <ion-card class="hintergrund">
+
+          <ion-icon name="checkmark-outline"></ion-icon>
+
+        </ion-card>
+      </ion-col>
+      <ion-col  size="8">
+        <h4>Brillen-Schutz-Paket</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-card class="ion-margin-vertical">
+        <ion-card-content>
+          <ion-col>
+            <h2 class="anpassung">Virtuelle Anprobe</h2>
+          </ion-col>
+          <ion-col>
+            <h3>
+              Sind Sie sich nicht sicher ob Ihnen dei Brille steht? Mit unserer Online Anprobe können Sie sich einfach anschauen wie die Brille auf Ihrem Gesicht aussehen würde.
+            </h3>
+          </ion-col>
+          <ion-button class="box">Jetzt virtuell anprobieren</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+  <ion-fab vertical="top" horizontal="end" slot="fixed">
+  <ion-fab-button activated="false" mode="ios">
+    <ion-icon name="heart-outline" ></ion-icon>
+  </ion-fab-button>
+</ion-fab>
 </ion-content>
