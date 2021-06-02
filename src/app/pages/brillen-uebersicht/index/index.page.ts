@@ -6,13 +6,12 @@ import {Router} from '@angular/router';
   templateUrl: './index.page.html',
   styleUrls: ['./index.page.scss'],
 })
-export class IndexPage implements OnInit {
+export class IndexPage {
 
   constructor(private router: Router) {
   }
 
-  ngOnInit() {
-  }
+
   brillenPage(url) {
     this.router.navigateByUrl(url);
   }
