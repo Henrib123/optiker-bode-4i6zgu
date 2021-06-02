@@ -15,6 +15,7 @@ export class IndexPage {
   brillenPage(url) {
     this.router.navigateByUrl(url);
   }
-
+  fabactive() {
+  }
 }
 

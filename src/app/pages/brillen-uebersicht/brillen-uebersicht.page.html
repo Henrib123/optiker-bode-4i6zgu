@@ -61,14 +61,15 @@
       </ion-col>
     </ion-row>
 
+    <div *ngFor="let brille of brillen; let i=index">
     <ion-row class="spezial">
       <ion-col size="6">
-        <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+        <ion-card  class="kartenbrille" button=true (click)="brillenPage('/tabs/brillen-uebersicht/index')">
 
           <ion-card-content class="brillenkarte">
             <div class="ion-text-center">
-              <img src="assets/images/TomFord.png" class="brillenbild">
-              <ion-card-text class="ion-align-items-center">Tom Ford</ion-card-text>
+              <img src="{{brille.vue_listing_image}}" class="brillenbild">
+              <ion-card-text class="ion-align-items-center">{{brille.title|slice:5}}</ion-card-text>
             </div>
           </ion-card-content>
         </ion-card>
@@ -85,7 +86,7 @@
         </ion-card>
       </ion-col>
     </ion-row>
-
+    </div>
     <ion-row class="spezial">
       <ion-col size="6">
         <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">

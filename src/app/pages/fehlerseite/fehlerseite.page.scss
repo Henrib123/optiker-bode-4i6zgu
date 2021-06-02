@@ -2,3 +2,36 @@
   --width: 500px;
 }
 
+
+
+ion-toolbar {
+  --background: white;
+  position: relative;
+}
+.user {
+  color: black;
+  font-size: 31px;
+  padding-right: 2vh;
+}
+
+.schrift {
+  padding-top: 10px;
+  margin-bottom: 57px;
+  margin-left: 20px;
+}
+
+h1 {
+  font-size: 31px;
+  position: absolute;
+  left: 19%;
+  color: black;
+}
+.optiker-logo {
+  text-align: center;
+  padding-top: 35px;
+}
+
+ion-text {
+  color: black;
+  font-size: 27px;
+}

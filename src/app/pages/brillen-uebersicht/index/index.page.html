@@ -24,9 +24,9 @@
     <ion-row>
       <p class="nummer">Seriennummer: 600327729624</p>
     </ion-row>
-    <ion-row>
+    <ion-row class="ion-align-items-end">
       <ion-col size="5">
-        <h3>Farbe</h3>
+        <h3>Farbe:</h3>
       </ion-col>
       <ion-col size="4">
         <p class="nummer2"> Havana/Gold</p>
@@ -37,23 +37,27 @@
       <ion-badge color="secondary">&nbsp;</ion-badge>
       <ion-badge color="tertiary">&nbsp;</ion-badge>
       <ion-badge class="havana">&nbsp;</ion-badge>
-    </ion-row>
-    <ion-row class="new">
-      <ion-col size="5">
-        <h3>Material</h3>
-      </ion-col>
-      <ion-col size="4">
-        <p class="nummer2"> Acetat</p>
-      </ion-col>
-    </ion-row>
-    <ion-row class="new">
-      <ion-col size="5">
-        <h3 >Rahmentyp</h3>
-      </ion-col>
-      <ion-col size="4">
-        <p class="nummer2"> Vollrand</p>
-      </ion-col>
-    </ion-row>
+    </ion-row >
+    <div class="new">
+      <ion-row class="ion-align-items-end">
+        <ion-col size="5">
+          <h3>Material:</h3>
+        </ion-col>
+        <ion-col size="4">
+          <p class="nummer2"> Acetat</p>
+        </ion-col>
+      </ion-row>
+    </div>
+    <div class="new">
+      <ion-row class="ion-align-items-end">
+        <ion-col size="5">
+          <h3 >Rahmentyp:</h3>
+        </ion-col>
+        <ion-col size="4">
+          <p class="nummer2"> Vollrand</p>
+        </ion-col>
+      </ion-row>
+    </div>
     <ion-row class="groß">
       <ion-col>
         <ion-button>Termin vereinbaren</ion-button>
@@ -156,7 +160,7 @@
 
 
   <ion-fab vertical="top" horizontal="end" slot="fixed">
-  <ion-fab-button activated="false" mode="ios">
+  <ion-fab-button (click)="fabactive()" mode="ios">
     <ion-icon name="heart-outline" ></ion-icon>
   </ion-fab-button>
 </ion-fab>
