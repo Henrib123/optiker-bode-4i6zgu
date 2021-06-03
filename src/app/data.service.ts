@@ -42,7 +42,7 @@ export class DataService {
       id: "3",
       field_sun_item: "15674",
       field_sun_material_txt: "acetat",
-      field_sun_shape_txt: "cat eye",
+      field_sun_shape_txt: "rund",
       field_sun_teaser_desc: "Die Fassung besteht aus hochwertigem Acetat",
       title: "DEMO Sonnebrille 5",
         field_sun_desc: "Eine dezente Cateye-Form und eine helle Havanna-Musterung prägen das Bild dieser Luxusbrille von Chanel. Die Fassung ist filigran, elegant und sehr weiblich. Ein dezentes Chanel-Logo ziert die schmalen Bügel.",

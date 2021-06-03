@@ -23,7 +23,7 @@
 
 <ion-content>
   <ion-fab slot="fixed" vertical="bottom" horizontal="end">
-    <ion-fab-button mode="ios" >
+    <ion-fab-button mode="ios" (click)="filterShape()">
       <ion-icon name="funnel"></ion-icon>
     </ion-fab-button>
   </ion-fab>
@@ -39,9 +39,9 @@
     </ion-row>
 
 
-    <div *ngFor="let brille of brillen; let i=index">
-    <ion-row class="spezial">
-      <ion-col size="6">
+    <div>
+    <ion-row>
+      <ion-col *ngFor="let brille of brillen; let i=index" size="6" class="spezial">
         <ion-card  class="kartenbrille" button=true (click)="brilleClicked(brille)">
 
           <ion-card-content class="brillenkarte">

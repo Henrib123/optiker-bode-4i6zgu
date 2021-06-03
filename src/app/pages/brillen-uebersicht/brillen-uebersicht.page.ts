@@ -28,5 +28,12 @@ export class BrillenUebersichtPage  {
     this.router.navigateByUrl('tabs/brillen-uebersicht/index', navigationExtras);
   }
 
+  filterShape() {
+    if (this.brillen.length < 25) {
+      this.brillen = this.dataService.getBrillenDaten();
+  }
+    else {
+    this.brillen = this.brillen.filter(brille => brille.field_sun_shape_txt === "rund");
+  }}
 
 }
