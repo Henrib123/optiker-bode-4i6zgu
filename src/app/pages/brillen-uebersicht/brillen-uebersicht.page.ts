@@ -25,6 +25,6 @@ export class BrillenUebersichtPage  {
         brille: brille.id
       }
     };
-    this.router.navigateByUrl('/brillen-uebersicht/index', navigationExtras);
+    this.router.navigateByUrl('tabs/brillen-uebersicht/index', navigationExtras);
   }
 }
