@@ -18,35 +18,22 @@
 </ion-header>
 
 <ion-content>
-  <ion-row class="spezial">
-    <ion-col size="12">
-      <ion-card class="kartenbrille" button=true (click)="brillenPage('/home')">
+  <div *ngFor="let brille of brillen  | slice:0:2; let i=index; ">
+    <ion-row class="spezial">
+      <ion-col size="12">
+        <ion-card class="kartenbrille" button=true (click)="brilleClicked(brille)">
 
-        <ion-card-content class="brillenkarte">
-
-
-          <img src="assets/images/TomFord.png" class="brillenbild">
-          <h2> Tom Ford</h2>
-          <p>Seriennummer: 12345787</p>
+          <ion-card-content class="brillenkarte">
 
 
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-    <ion-col size="12">
-      <ion-card button=true (click)="brillenPage('/tabs/brillen-uebersicht/index')">
-
-        <ion-card-content class="brillenkarte">
+            <img src="{{brille.vue_listing_image}}" class="brillenbild">
+            <h2>{{brille.title|slice:5}} </h2>
+            <p>Seriennummer: {{brille.field_sun_item}}</p>
 
 
-          <img src="assets/images/SaintLaurent.png" class="brillenbild">
-
-          <h2>Ray Ban</h2>
-          <p>Seriennummer: 12345787</p>
-
-
-        </ion-card-content>
-      </ion-card>
-    </ion-col>
-  </ion-row>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </div>
 </ion-content>

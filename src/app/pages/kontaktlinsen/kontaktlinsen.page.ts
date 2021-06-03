@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {NavigationExtras, Router} from '@angular/router';
 
 @Component({
   selector: 'app-kontaktlinsen',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KontaktlinsenPage implements OnInit {
 
-  constructor() { }
+  constructor( private router: Router) { }
 
   ngOnInit() {
   }
-
+  brillenPage(url) {
+    this.router.navigateByUrl(url);
+  }
 }
