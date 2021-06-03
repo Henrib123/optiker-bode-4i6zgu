@@ -64,7 +64,7 @@
     <div *ngFor="let brille of brillen; let i=index">
     <ion-row class="spezial">
       <ion-col size="6">
-        <ion-card  class="kartenbrille" button=true (click)="brillenPage('/tabs/brillen-uebersicht/index')">
+        <ion-card  class="kartenbrille" button=true (click)="brilleClicked(brille)">
 
           <ion-card-content class="brillenkarte">
             <div class="ion-text-center">

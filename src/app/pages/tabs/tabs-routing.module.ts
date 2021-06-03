@@ -21,7 +21,14 @@ const routes: Routes = [
       },
       {
         path: 'brillen-uebersicht',
-        loadChildren: () => import('../brillen-uebersicht/brillen-uebersicht.module').then(m => m.BrillenUebersichtPageModule)
+        loadChildren: () => import('../brillen-uebersicht/brillen-uebersicht.module').then(m => m.BrillenUebersichtPageModule),
+     /*   children: [
+          {
+            path: 'brilleId',
+            loadChildren:
+            './brillen-uebersicht/index/index.module#IndexPage'
+          }
+        ] */
       },
       {
         path: 'home',

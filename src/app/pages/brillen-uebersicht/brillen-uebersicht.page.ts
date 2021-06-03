@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import {NavigationExtras, Router} from '@angular/router';
 import { DataService } from "../../data.service";
 
 @Component({
@@ -19,5 +19,12 @@ export class BrillenUebersichtPage  {
     this.router.navigateByUrl(url);
   }
 
-
+  brilleClicked(brille) {
+    let navigationExtras: NavigationExtras = {
+      queryParams: {
+        brille: brille.id
+      }
+    };
+    this.router.navigateByUrl('/brillen-uebersicht/index', navigationExtras);
+  }
 }
