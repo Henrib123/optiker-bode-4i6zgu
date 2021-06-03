@@ -15,14 +15,15 @@
   </ion-toolbar>
 </ion-header>
 
+<div ></div>
 <ion-content>
-  <img src="assets/images/RayBan2.png" alt="">
+  <img src="{{brille.vue_listing_image}}" alt="">
   <ion-grid class="padd">
     <ion-row class="gap">
       <h2>RayBan</h2>
     </ion-row>
     <ion-row>
-      <p class="nummer">Seriennummer: 600327729624</p>
+      <p class="nummer">Seriennummer: {{brille.field_sun_item}}</p>
     </ion-row>
     <ion-row class="ion-align-items-end">
       <ion-col size="5">
@@ -44,7 +45,7 @@
           <h3>Material:</h3>
         </ion-col>
         <ion-col size="4">
-          <p class="nummer2"> Acetat</p>
+          <p class="nummer2"> {{brille.field_sun_material_txt}}</p>
         </ion-col>
       </ion-row>
     </div>
@@ -54,7 +55,7 @@
           <h3 >Rahmentyp:</h3>
         </ion-col>
         <ion-col size="4">
-          <p class="nummer2"> Vollrand</p>
+          <p class="nummer2"> {{brille.field_sun_shape_txt}}</p>
         </ion-col>
       </ion-row>
     </div>
@@ -72,10 +73,7 @@
       <h3 class="size">Klassische Sonnenbrille von RayBan</h3>
     </ion-row>
     <ion-row>
-      <p class="info">Diese Brille fasziniert nicht nur durch ihren elegenaten Stil,
-        sondern auch durch den Tragekomfort den Chanel Ihnen
-        mit der leichten Fassung schenkt. Die extravagante
-        Cateyebrille zieht mit Ihrer Farbkombination alle Blicke auf sich. Ein besonderes Highlight sind die Perlen, die in die Bügel dieser Chanel Brille eingearbeitet wurden. </p>
+      <p class="info"> {{brille.field_sun_teaser_desc}} </p>
     </ion-row>
     <ion-row>
       <ion-col>

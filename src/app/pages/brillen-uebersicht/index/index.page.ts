@@ -18,22 +18,13 @@ export class IndexPage {
 
   this.route.queryParams.subscribe(params => {
     if (this.router.getCurrentNavigation().extras.queryParams) {
-      this.brille = this.router.getCurrentNavigation().extras.queryParams.brille;
-
+     const brilleId = this.router.getCurrentNavigation().extras.queryParams.brille;
+      this.brille = this.brillen[brilleId];
+      console.log(this.brille);
     }
     });
 }
 
-  ngOnInit() {
-   /* this.activatedRoute.paramMap.subscribe(paramMap => {
-      if(!paramMap.has('brilleId')) {
-        //redirect
-        return;
-      }
-      const brilleId = paramMap.get('brilleId');
-      this.dataService.getBrillenDaten(brilleId);
-    }); */
-  }
 
   brillenPage(url) {
     this.router.navigateByUrl(url);

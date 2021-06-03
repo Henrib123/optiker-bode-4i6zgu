@@ -27,4 +27,6 @@ export class BrillenUebersichtPage  {
     };
     this.router.navigateByUrl('tabs/brillen-uebersicht/index', navigationExtras);
   }
+
+
 }
