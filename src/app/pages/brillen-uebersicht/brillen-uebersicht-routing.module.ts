@@ -17,12 +17,17 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes: [
-  {path: 'index', children:[
-      {path: '', component: IndexPage},
-      {path:':index', component: IndexPage}
-    ] },
-])]
+  imports: [RouterModule.forChild([
+    {path: '', component: BrillenUebersichtPage},
 
+    {
+      path: 'index', children: [
+        {path: '', component: IndexPage},
+        {path: ':index', component: IndexPage}
+      ]}
+  ])]
 })
+
+
+
 export class BrillenUebersichtPageRoutingModule {}
