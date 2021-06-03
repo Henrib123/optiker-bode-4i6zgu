@@ -12,6 +12,7 @@ export class IndexPage {
 
   brillen = [];
   brille = {};
+  isFavourite = false;
 
   constructor(private router: Router, private dataService: DataService, private route: ActivatedRoute ) {
   this.brillen = this.dataService.getBrillenDaten();
@@ -30,5 +31,13 @@ export class IndexPage {
     this.router.navigateByUrl(url);
   }
 
+  ifFavourite() {
+    if (this.isFavourite) {
+      this.isFavourite = false;
+    }
+    else {
+      this.isFavourite = true;
+    }
+  }
 }
 

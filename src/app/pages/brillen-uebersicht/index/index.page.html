@@ -61,7 +61,7 @@
     </div>
     <ion-row class="groß">
       <ion-col>
-        <ion-button>Termin vereinbaren</ion-button>
+        <ion-button (click)="brillenPage('/tabs/fehlerseite')">Termin vereinbaren</ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -158,8 +158,8 @@
 
 
   <ion-fab vertical="top" horizontal="end" slot="fixed">
-  <ion-fab-button (click)="fabactive()" mode="ios">
-    <ion-icon name="heart-outline" ></ion-icon>
+  <ion-fab-button (click)="ifFavourite()" mode="ios">
+    <ion-icon name="{{isFavourite ? 'heart-outline' : 'heart'}}" ></ion-icon>
   </ion-fab-button>
 </ion-fab>
 </ion-content>
