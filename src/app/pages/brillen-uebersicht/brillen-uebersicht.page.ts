@@ -33,7 +33,7 @@ export class BrillenUebersichtPage  {
       this.brillen = this.dataService.getBrillenDaten();
   }
     else {
-    this.brillen = this.brillen.filter(brille => brille.field_sun_shape_txt === "rund");
+    this.brillen = this.brillen.filter(brille => brille.field_sun_shape_txt === "Rund");
   }}
 
 }
